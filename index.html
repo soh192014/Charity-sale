@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>义卖会 Charity Sale</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:"Arial","Microsoft YaHei",sans-serif;
+    }
+
+    body{
+        background: linear-gradient(135deg,#ffe8e8,#fff7e7,#e8f6ff);
+        padding:30px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:30px;
+    }
+
+    .card{
+        width:420px;
+        background:white;
+        border-radius:30px;
+        padding:30px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.15);
+        position:relative;
+        overflow:hidden;
+    }
+
+    .card::before{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:12px;
+        background:linear-gradient(90deg,#ff8fa3,#ffd166,#7bdff2,#b2f7ef);
+    }
+
+    h1{
+        text-align:center;
+        font-size:48px;
+        margin-top:10px;
+        color:#5a3e36;
+    }
+
+    .subtitle{
+        text-align:center;
+        margin:10px 0 25px;
+        color:#ff6b81;
+        font-size:20px;
+        font-weight:bold;
+    }
+
+    .menu-item{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:18px 0;
+        border-bottom:2px dashed #ffd3dc;
+        font-size:24px;
+    }
+
+    .price{
+        color:#ff4d6d;
+        font-weight:bold;
+    }
+
+    .note{
+        margin-top:25px;
+        background:#fff4d6;
+        padding:18px;
+        border-radius:18px;
+        font-size:18px;
+        line-height:1.7;
+    }
+
+    .deadline{
+        margin-top:20px;
+        background:#ffe0e6;
+        padding:15px;
+        border-radius:18px;
+        text-align:center;
+        font-size:22px;
+        font-weight:bold;
+        color:#e63946;
+    }
+
+    .charity{
+        margin-top:20px;
+        background:#eefbe7;
+        padding:20px;
+        border-radius:18px;
+        line-height:1.8;
+        font-size:18px;
+        text-align:center;
+    }
+
+    .emoji{
+        font-size:30px;
+    }
+
+    @media(max-width:900px){
+        body{
+            padding:15px;
+        }
+
+        .card{
+            width:100%;
+        }
+
+        h1{
+            font-size:38px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- 华文版 -->
+<div class="card">
+
+    <h1>义卖会</h1>
+    <div class="subtitle">💖 爱心义卖 · 传递温暖 💖</div>
+
+    <div class="menu-item">
+        <span>🧸 毛绒玩具（大）</span>
+        <span class="price">RM50</span>
+    </div>
+
+    <div class="menu-item">
+        <span>🐰 毛绒玩具（小）</span>
+        <span class="price">RM30</span>
+    </div>
+
+    <div class="menu-item">
+        <span>🎁 盲盒</span>
+        <span class="price">RM30</span>
+    </div>
+
+    <div class="note">
+        ⭐ 先到先得，先到的可以自由选择玩偶或盲盒。
+    </div>
+
+    <div class="deadline">
+        📅 截止日期：6月30日
+    </div>
+
+    <div class="charity">
+        ❤️ 这些钱会用于购买日常生活用品，<br>
+        以捐给孤儿院和老人院。
+    </div>
+
+</div>
+
+<!-- English Version -->
+<div class="card">
+
+    <h1>Charity Sale</h1>
+    <div class="subtitle">💖 Share Love · Spread Warmth 💖</div>
+
+    <div class="menu-item">
+        <span>🧸 Plush Toy (Large)</span>
+        <span class="price">RM50</span>
+    </div>
+
+    <div class="menu-item">
+        <span>🐰 Plush Toy (Small)</span>
+        <span class="price">RM30</span>
+    </div>
+
+    <div class="menu-item">
+        <span>🎁 Blind Box</span>
+        <span class="price">RM30</span>
+    </div>
+
+    <div class="note">
+        ⭐ First come, first served. Early arrivals can freely choose plush toys or blind boxes.
+    </div>
+
+    <div class="deadline">
+        📅 Deadline: June 30
+    </div>
+
+    <div class="charity">
+        ❤️ All proceeds will be used to purchase daily necessities
+        for donation to orphanages and nursing homes.
+    </div>
+
+</div>
+
+</body>
+</html>
